@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+body {
+  font-size: 14px;
+  line-height: 1.25rem;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: theme('colors.neutral-50');
+}
+
+main {
+  flex-grow: 1;
+}
+
+input {
+  outline: none;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-group label {
+  color: theme('colors.neutral-500');
+  width: fit-content;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.form-group input {
+  background: theme('colors.neutral-800');
+  padding: 14px 16px;
+  border-radius: 4px;
+  color: theme('colors.neutral-500');
+}
+
+@layer utilities {
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@tailwind utilities;
